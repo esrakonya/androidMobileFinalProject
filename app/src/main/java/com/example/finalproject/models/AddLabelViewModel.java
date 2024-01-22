@@ -6,14 +6,21 @@ import androidx.lifecycle.ViewModel;
 
 public class AddLabelViewModel extends ViewModel {
 
-    private final MutableLiveData<String> mText;
+    private String label;
 
-    public AddLabelViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+    public AddLabelViewModel() {}
+
+    public AddLabelViewModel(String label) {
+        this.label = label;
     }
 
-    public LiveData<String> getText() {
-        return mText;
+    public String getLabel() {
+        return label;
     }
+
+    public void setLabel() {
+        this.label = label;
+    }
+
+
 }
