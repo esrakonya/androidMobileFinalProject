@@ -7,7 +7,7 @@
     tools:context=".ui.AddPhotoFragment">
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageView"
         android:layout_width="123dp"
         android:layout_height="134dp"
         android:layout_marginTop="55dp"
@@ -34,9 +34,10 @@
         android:text="Paylaş"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="407dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
